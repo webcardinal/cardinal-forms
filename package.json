@@ -14,14 +14,15 @@
     "build/dist"
   ],
   "scripts": {
-    "build": "stencil build --prod --docs",
-    "dev": "stencil build --dev",
+    "build": "npm i @cardinal/core && stencil build --prod --docs",
+    "dev": "npm i @cardinal/core && stencil build --dev",
     "generate": "stencil generate"
   },
   "dependencies": {
     "prismjs": "^1.21.0"
   },
   "devDependencies": {
+    "@cardinal/core": "file:../core",
     "@stencil/core": "^2.3.0",
     "@stencil/router": "^1.0.1",
     "octopus": "git+http://github.com/privatesky/octopus.git"

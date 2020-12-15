@@ -1,6 +1,5 @@
 import { h, Component, Prop } from '@stencil/core';
-import { BindModel, TableOfContentProperty } from '../../../../core/src/decorators';
-import CustomTheme from '../../../../core/src/decorators/CustomTheme';
+import { BindModel, TableOfContentProperty, CustomTheme } from '@cardinal/core';
 
 @Component({
     tag: 'psk-email-input'
