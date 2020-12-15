@@ -1,4 +1,4 @@
-# psk-email-input
+# psk-number-input
 
 
 
@@ -27,9 +27,9 @@
 ### Graph
 ```mermaid
 graph TD;
-  psk-email-input --> psk-input
+  psk-number-input --> psk-input
   psk-input --> psk-label
-  style psk-email-input fill:#f9f,stroke:#333,stroke-width:4px
+  style psk-number-input fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

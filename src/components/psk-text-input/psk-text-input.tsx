@@ -2,13 +2,35 @@ import { Component, h, Prop } from '@stencil/core';
 import { BindModel, CustomTheme, TableOfContentProperty } from '@cardinal/core';
 
 @Component({
-    tag: 'psk-email-input'
+    tag: 'psk-text-input'
 })
-export class PskEmailInput {
+export class PskTextInput {
 
     @CustomTheme()
 
     @BindModel() modelHandler;
+
+    render() {
+        return <psk-input
+            type="text"
+            label={this.label}
+            name={this.name}
+            value={this.value}
+            placeholder={this.placeholder}
+            required={this.required}
+            readOnly={this.readOnly}
+            invalidValue={this.invalidValue}
+            specificProps={{
+                onKeyUp: this.__inputHandler.bind(this),
+                onChange: this.__inputHandler.bind(this)
+            }} />
+    }
+
+    __inputHandler = (event) => {
+        event.stopImmediatePropagation();
+        let value = event.target.value;
+        this.modelHandler.updateModel('value', value);
+    };
 
     @TableOfContentProperty({
         description: [`By filling out this property, the component will display above it, a label using <psk-link page="forms/psk-label">psk-label</psk-link> component.`],
@@ -19,22 +41,22 @@ export class PskEmailInput {
     @Prop() label?: string | null = null;
 
     @TableOfContentProperty({
-        description: [`Specifies the value of an psk-email-input component.`,
+        description: [`Specifies the value of an psk-text-input component.`,
             `This value is updated also in the model using the two-way binding. Information about two-way binding using models and templates can be found at: <psk-link page="forms/using-forms">Using forms</psk-link>.`],
         isMandatory: false,
         propertyType: 'string'
     })
-    @Prop() value?: string | null = null;
+    @Prop({attribute:"value"}) value;
 
     @TableOfContentProperty({
-        description: [`Specifies the name of a psk-email-input component. It is used along with the psk-label component.`],
+        description: [`Specifies the name of a psk-text-input component. It is used along with the psk-label component.`],
         isMandatory: false,
         propertyType: 'string'
     })
     @Prop() name?: string | null = null;
 
     @TableOfContentProperty({
-        description: [`Specifies a short hint that describes the expected value of an psk-email-input component`],
+        description: [`Specifies a short hint that describes the expected value of an psk-text-input component`],
         isMandatory: false,
         propertyType: 'string'
     })
@@ -64,26 +86,4 @@ export class PskEmailInput {
         propertyType: 'boolean'
     })
     @Prop() invalidValue?: boolean | null = null;
-
-    render() {
-        return <psk-input
-            type="email"
-            label={this.label}
-            name={this.name}
-            value={this.value}
-            placeholder={this.placeholder}
-            required={this.required}
-            readOnly={this.readOnly}
-            invalidValue={this.invalidValue}
-            specificProps={{
-                onKeyUp: this.__inputHandler.bind(this),
-                onChange: this.__inputHandler.bind(this)
-            }} />
-    }
-
-    __inputHandler = (event) => {
-        event.stopImmediatePropagation();
-        let value = event.target.value;
-        this.modelHandler.updateModel('value', value);
-    }
 }

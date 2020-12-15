@@ -1,4 +1,4 @@
-# psk-email-input
+# psk-textarea
 
 
 
@@ -22,14 +22,13 @@
 
 ### Depends on
 
-- [psk-input](../psk-input)
+- [psk-label](../psk-label)
 
 ### Graph
 ```mermaid
 graph TD;
-  psk-email-input --> psk-input
-  psk-input --> psk-label
-  style psk-email-input fill:#f9f,stroke:#333,stroke-width:4px
+  psk-textarea --> psk-label
+  style psk-textarea fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

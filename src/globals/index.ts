@@ -1,2 +1,2 @@
-import setMode from '../../../core/src/globals';
-export default setMode;
+import { globals } from '@cardinal/core';
+export default globals;

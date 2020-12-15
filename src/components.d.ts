@@ -5,8 +5,128 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { RouterHistory } from "@stencil/router";
+import { SelectType } from "./interfaces";
 export namespace Components {
+    interface PskCheckbox {
+        "checkboxLabel": any;
+        "checked"?: string;
+        "checkedValue"?: string | null;
+        "label": string;
+        "name"?: string | null;
+        "required"?: boolean;
+        "uncheckedValue"?: string | null;
+        "value"?: any;
+    }
+    interface PskDateInput {
+        "dataFormat"?: string | null;
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: string;
+        "value"?: string | null;
+    }
     interface PskEmailInput {
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: boolean;
+        "value"?: string | null;
+    }
+    interface PskForm {
+        "controllerName": string | null;
+        "formActions"?: string | null;
+        "history": RouterHistory;
+    }
+    interface PskFormRow {
+        "layout": string | null;
+    }
+    interface PskImgInput {
+        "alt"?: string | null;
+        "eventName"?: string | null;
+        "label"?: string | null;
+        "placeholder"?: string;
+        "src"?: any | null;
+    }
+    interface PskInput {
+        "dataDate"?: string;
+        "dataDateFormat"?: string | null;
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: boolean;
+        /**
+          * Property used only by other components psk-text-input, psk-email-input...
+         */
+        "specificProps"?: any;
+        "type"?: string;
+        "value"?: string | null;
+    }
+    interface PskLabel {
+        "for": string | null;
+        "label": string;
+    }
+    interface PskNumberInput {
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: boolean;
+        "value"?: string | null;
+    }
+    interface PskPasswordInput {
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: boolean;
+        "value"?: string | null;
+    }
+    interface PskRadio {
+        "checked"?: boolean;
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "readOnly"?: boolean;
+        "value"?: string | null;
+    }
+    interface PskRadioGroup {
+        "invalid"?: boolean;
+        "label"?: string | null;
+        "name"?: string | null;
+        "required"?: boolean;
+        "value"?: string | null;
+    }
+    interface PskSelect {
+        "disabled"?: boolean;
+        "eventData": any | null;
+        "eventName": string | null;
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "placeholder"?: string | null;
+        "required"?: boolean;
+        "selectOptions"?: string | null;
+        "selectionType"?: SelectType;
+        "value"?: string | null;
+    }
+    interface PskTextInput {
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: boolean;
+        "value": any;
+    }
+    interface PskTextarea {
         "invalidValue"?: boolean | null;
         "label"?: string | null;
         "name"?: string | null;
@@ -17,17 +137,135 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLPskCheckboxElement extends Components.PskCheckbox, HTMLStencilElement {
+    }
+    var HTMLPskCheckboxElement: {
+        prototype: HTMLPskCheckboxElement;
+        new (): HTMLPskCheckboxElement;
+    };
+    interface HTMLPskDateInputElement extends Components.PskDateInput, HTMLStencilElement {
+    }
+    var HTMLPskDateInputElement: {
+        prototype: HTMLPskDateInputElement;
+        new (): HTMLPskDateInputElement;
+    };
     interface HTMLPskEmailInputElement extends Components.PskEmailInput, HTMLStencilElement {
     }
     var HTMLPskEmailInputElement: {
         prototype: HTMLPskEmailInputElement;
         new (): HTMLPskEmailInputElement;
     };
+    interface HTMLPskFormElement extends Components.PskForm, HTMLStencilElement {
+    }
+    var HTMLPskFormElement: {
+        prototype: HTMLPskFormElement;
+        new (): HTMLPskFormElement;
+    };
+    interface HTMLPskFormRowElement extends Components.PskFormRow, HTMLStencilElement {
+    }
+    var HTMLPskFormRowElement: {
+        prototype: HTMLPskFormRowElement;
+        new (): HTMLPskFormRowElement;
+    };
+    interface HTMLPskImgInputElement extends Components.PskImgInput, HTMLStencilElement {
+    }
+    var HTMLPskImgInputElement: {
+        prototype: HTMLPskImgInputElement;
+        new (): HTMLPskImgInputElement;
+    };
+    interface HTMLPskInputElement extends Components.PskInput, HTMLStencilElement {
+    }
+    var HTMLPskInputElement: {
+        prototype: HTMLPskInputElement;
+        new (): HTMLPskInputElement;
+    };
+    interface HTMLPskLabelElement extends Components.PskLabel, HTMLStencilElement {
+    }
+    var HTMLPskLabelElement: {
+        prototype: HTMLPskLabelElement;
+        new (): HTMLPskLabelElement;
+    };
+    interface HTMLPskNumberInputElement extends Components.PskNumberInput, HTMLStencilElement {
+    }
+    var HTMLPskNumberInputElement: {
+        prototype: HTMLPskNumberInputElement;
+        new (): HTMLPskNumberInputElement;
+    };
+    interface HTMLPskPasswordInputElement extends Components.PskPasswordInput, HTMLStencilElement {
+    }
+    var HTMLPskPasswordInputElement: {
+        prototype: HTMLPskPasswordInputElement;
+        new (): HTMLPskPasswordInputElement;
+    };
+    interface HTMLPskRadioElement extends Components.PskRadio, HTMLStencilElement {
+    }
+    var HTMLPskRadioElement: {
+        prototype: HTMLPskRadioElement;
+        new (): HTMLPskRadioElement;
+    };
+    interface HTMLPskRadioGroupElement extends Components.PskRadioGroup, HTMLStencilElement {
+    }
+    var HTMLPskRadioGroupElement: {
+        prototype: HTMLPskRadioGroupElement;
+        new (): HTMLPskRadioGroupElement;
+    };
+    interface HTMLPskSelectElement extends Components.PskSelect, HTMLStencilElement {
+    }
+    var HTMLPskSelectElement: {
+        prototype: HTMLPskSelectElement;
+        new (): HTMLPskSelectElement;
+    };
+    interface HTMLPskTextInputElement extends Components.PskTextInput, HTMLStencilElement {
+    }
+    var HTMLPskTextInputElement: {
+        prototype: HTMLPskTextInputElement;
+        new (): HTMLPskTextInputElement;
+    };
+    interface HTMLPskTextareaElement extends Components.PskTextarea, HTMLStencilElement {
+    }
+    var HTMLPskTextareaElement: {
+        prototype: HTMLPskTextareaElement;
+        new (): HTMLPskTextareaElement;
+    };
     interface HTMLElementTagNameMap {
+        "psk-checkbox": HTMLPskCheckboxElement;
+        "psk-date-input": HTMLPskDateInputElement;
         "psk-email-input": HTMLPskEmailInputElement;
+        "psk-form": HTMLPskFormElement;
+        "psk-form-row": HTMLPskFormRowElement;
+        "psk-img-input": HTMLPskImgInputElement;
+        "psk-input": HTMLPskInputElement;
+        "psk-label": HTMLPskLabelElement;
+        "psk-number-input": HTMLPskNumberInputElement;
+        "psk-password-input": HTMLPskPasswordInputElement;
+        "psk-radio": HTMLPskRadioElement;
+        "psk-radio-group": HTMLPskRadioGroupElement;
+        "psk-select": HTMLPskSelectElement;
+        "psk-text-input": HTMLPskTextInputElement;
+        "psk-textarea": HTMLPskTextareaElement;
     }
 }
 declare namespace LocalJSX {
+    interface PskCheckbox {
+        "checkboxLabel"?: any;
+        "checked"?: string;
+        "checkedValue"?: string | null;
+        "label"?: string;
+        "name"?: string | null;
+        "required"?: boolean;
+        "uncheckedValue"?: string | null;
+        "value"?: any;
+    }
+    interface PskDateInput {
+        "dataFormat"?: string | null;
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: string;
+        "value"?: string | null;
+    }
     interface PskEmailInput {
         "invalidValue"?: boolean | null;
         "label"?: string | null;
@@ -37,15 +275,142 @@ declare namespace LocalJSX {
         "required"?: boolean;
         "value"?: string | null;
     }
+    interface PskForm {
+        "controllerName"?: string | null;
+        "formActions"?: string | null;
+        "history"?: RouterHistory;
+    }
+    interface PskFormRow {
+        "layout"?: string | null;
+    }
+    interface PskImgInput {
+        "alt"?: string | null;
+        "eventName"?: string | null;
+        "label"?: string | null;
+        "placeholder"?: string;
+        "src"?: any | null;
+    }
+    interface PskInput {
+        "dataDate"?: string;
+        "dataDateFormat"?: string | null;
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: boolean;
+        /**
+          * Property used only by other components psk-text-input, psk-email-input...
+         */
+        "specificProps"?: any;
+        "type"?: string;
+        "value"?: string | null;
+    }
+    interface PskLabel {
+        "for"?: string | null;
+        "label"?: string;
+    }
+    interface PskNumberInput {
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: boolean;
+        "value"?: string | null;
+    }
+    interface PskPasswordInput {
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: boolean;
+        "value"?: string | null;
+    }
+    interface PskRadio {
+        "checked"?: boolean;
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "onOnChangeRadio"?: (event: CustomEvent<any>) => void;
+        "readOnly"?: boolean;
+        "value"?: string | null;
+    }
+    interface PskRadioGroup {
+        "invalid"?: boolean;
+        "label"?: string | null;
+        "name"?: string | null;
+        "required"?: boolean;
+        "value"?: string | null;
+    }
+    interface PskSelect {
+        "disabled"?: boolean;
+        "eventData"?: any | null;
+        "eventName"?: string | null;
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "placeholder"?: string | null;
+        "required"?: boolean;
+        "selectOptions"?: string | null;
+        "selectionType"?: SelectType;
+        "value"?: string | null;
+    }
+    interface PskTextInput {
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: boolean;
+        "value"?: any;
+    }
+    interface PskTextarea {
+        "invalidValue"?: boolean | null;
+        "label"?: string | null;
+        "name"?: string | null;
+        "placeholder"?: string | null;
+        "readOnly"?: boolean;
+        "required"?: boolean;
+        "value"?: string | null;
+    }
     interface IntrinsicElements {
+        "psk-checkbox": PskCheckbox;
+        "psk-date-input": PskDateInput;
         "psk-email-input": PskEmailInput;
+        "psk-form": PskForm;
+        "psk-form-row": PskFormRow;
+        "psk-img-input": PskImgInput;
+        "psk-input": PskInput;
+        "psk-label": PskLabel;
+        "psk-number-input": PskNumberInput;
+        "psk-password-input": PskPasswordInput;
+        "psk-radio": PskRadio;
+        "psk-radio-group": PskRadioGroup;
+        "psk-select": PskSelect;
+        "psk-text-input": PskTextInput;
+        "psk-textarea": PskTextarea;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "psk-checkbox": LocalJSX.PskCheckbox & JSXBase.HTMLAttributes<HTMLPskCheckboxElement>;
+            "psk-date-input": LocalJSX.PskDateInput & JSXBase.HTMLAttributes<HTMLPskDateInputElement>;
             "psk-email-input": LocalJSX.PskEmailInput & JSXBase.HTMLAttributes<HTMLPskEmailInputElement>;
+            "psk-form": LocalJSX.PskForm & JSXBase.HTMLAttributes<HTMLPskFormElement>;
+            "psk-form-row": LocalJSX.PskFormRow & JSXBase.HTMLAttributes<HTMLPskFormRowElement>;
+            "psk-img-input": LocalJSX.PskImgInput & JSXBase.HTMLAttributes<HTMLPskImgInputElement>;
+            "psk-input": LocalJSX.PskInput & JSXBase.HTMLAttributes<HTMLPskInputElement>;
+            "psk-label": LocalJSX.PskLabel & JSXBase.HTMLAttributes<HTMLPskLabelElement>;
+            "psk-number-input": LocalJSX.PskNumberInput & JSXBase.HTMLAttributes<HTMLPskNumberInputElement>;
+            "psk-password-input": LocalJSX.PskPasswordInput & JSXBase.HTMLAttributes<HTMLPskPasswordInputElement>;
+            "psk-radio": LocalJSX.PskRadio & JSXBase.HTMLAttributes<HTMLPskRadioElement>;
+            "psk-radio-group": LocalJSX.PskRadioGroup & JSXBase.HTMLAttributes<HTMLPskRadioGroupElement>;
+            "psk-select": LocalJSX.PskSelect & JSXBase.HTMLAttributes<HTMLPskSelectElement>;
+            "psk-text-input": LocalJSX.PskTextInput & JSXBase.HTMLAttributes<HTMLPskTextInputElement>;
+            "psk-textarea": LocalJSX.PskTextarea & JSXBase.HTMLAttributes<HTMLPskTextareaElement>;
         }
     }
 }
