@@ -1,7 +1,9 @@
 import { Component, Element, h, Prop, State } from '@stencil/core';
 import { BindModel, CustomTheme, PskButtonEvent, TableOfContentProperty } from '@cardinal/core';
-import { INVALID_ID_CHARACTERS_REGEX, normalizeRegexToString } from '@cardinal/core'; // utils
+import { normalizeRegexToString } from '@cardinal/core'; // utils
 import { Option, SelectType } from '../../interfaces';
+
+const INVALID_ID_CHARACTERS_REGEX = /[^A-Za-z0-9_-]/g;
 
 @Component({
   tag: 'psk-select'
@@ -19,11 +21,11 @@ export class PskSelect {
 
   @TableOfContentProperty({
     description: [`This property is providing the list of the options available for selection.`,
-      `Each option is sepparated by the special character "|" (pipe) (e.g. option 1 | option 2 | option 3).`,
-      `For each option, as a recommendation, you should add a value sepparated by comma.`,
+      `Each option is separated by the special character "|" (pipe) (e.g. option 1 | option 2 | option 3).`,
+      `For each option, as a recommendation, you should add a value separated by comma.`,
       `Example of options with values: "Romania, ROM | Italy, ITA | Germany, DE"`,
       `If no value is provided for an option, the component will create one. It will take the option and will normalize it creating the value. Any character which does not comply to the rule, will be removed.`,
-      `The rule is that a label must match the folowing regular exprssion: "A-Za-z0-9_-"., which means that all the characers should be alpha-numeric and only two special characters are allowed (_ and -).`],
+      `The rule is that a label must match the following regular expression: "A-Za-z0-9_-"., which means that all the characters should be alpha-numeric and only two special characters are allowed (_ and -).`],
     isMandatory: false,
     propertyType: 'string'
   })
