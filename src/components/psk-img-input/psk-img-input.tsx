@@ -1,5 +1,5 @@
 import { Component, Element, h, Host, Prop, State, Watch } from '@stencil/core'
-import { BindModel, CustomTheme, TableOfContentProperty, fetch } from '@cardinal/core'
+import { BindModel, CustomTheme, TableOfContentProperty, fetch } from '@cardinal/internals'
 
 @Component({
   tag: 'psk-img-input'

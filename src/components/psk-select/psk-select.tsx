@@ -1,6 +1,6 @@
 import { Component, Element, h, Prop, State } from '@stencil/core';
-import { BindModel, CustomTheme, PskButtonEvent, TableOfContentProperty } from '@cardinal/core';
-import { normalizeRegexToString } from '@cardinal/core'; // utils
+import { BindModel, CustomTheme, PskButtonEvent, TableOfContentProperty } from '@cardinal/internals';
+import { normalizeRegexToString } from '@cardinal/internals'; // utils
 import { Option, SelectType } from '../../interfaces';
 
 const INVALID_ID_CHARACTERS_REGEX = /[^A-Za-z0-9_-]/g;

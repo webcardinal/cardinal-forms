@@ -1,5 +1,5 @@
 import { Component, Event, EventEmitter, h, Prop } from '@stencil/core';
-import { BindModel, CustomTheme, TableOfContentEvent, TableOfContentProperty } from '@cardinal/core';
+import { BindModel, CustomTheme, TableOfContentEvent, TableOfContentProperty } from '@cardinal/internals';
 
 @Component({
     tag: 'psk-radio'

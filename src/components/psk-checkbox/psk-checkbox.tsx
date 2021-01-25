@@ -1,5 +1,5 @@
 import { Component, h, Prop } from '@stencil/core';
-import { BindModel, CustomTheme, TableOfContentProperty, stringToBoolean } from '@cardinal/core';
+import { BindModel, CustomTheme, TableOfContentProperty, stringToBoolean } from '@cardinal/internals';
 
 @Component({
     tag: 'psk-checkbox'
