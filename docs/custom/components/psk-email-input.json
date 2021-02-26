@@ -1,0 +1,151 @@
+{
+  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-email-input",
+  "filePath": "./src/components/psk-email-input/psk-email-input.tsx",
+  "fileName": "psk-email-input.tsx",
+  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-email-input/readme.md",
+  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-email-input/usage",
+  "tag": "psk-email-input",
+  "usage": {},
+  "docs": "",
+  "docsTags": [],
+  "encapsulation": "none",
+  "dependents": [],
+  "dependencies": [
+    "psk-input"
+  ],
+  "dependencyGraph": {
+    "psk-email-input": [
+      "psk-input"
+    ],
+    "psk-input": [
+      "psk-label"
+    ]
+  },
+  "props": [
+    {
+      "name": "invalidValue",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "invalid-value",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "mutable": false,
+      "attr": "label",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "mutable": false,
+      "attr": "name",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "mutable": false,
+      "attr": "placeholder",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "readOnly",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "read-only",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "required",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "mutable": false,
+      "attr": "value",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "events": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "listeners": []
+}

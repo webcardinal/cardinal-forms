@@ -1,0 +1,114 @@
+{
+  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-img-input",
+  "filePath": "./src/components/psk-img-input/psk-img-input.tsx",
+  "fileName": "psk-img-input.tsx",
+  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-img-input/readme.md",
+  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-img-input/usage",
+  "tag": "psk-img-input",
+  "usage": {},
+  "docs": "",
+  "docsTags": [],
+  "encapsulation": "none",
+  "dependents": [],
+  "dependencies": [
+    "psk-label"
+  ],
+  "dependencyGraph": {
+    "psk-img-input": [
+      "psk-label"
+    ]
+  },
+  "props": [
+    {
+      "name": "alt",
+      "type": "string",
+      "mutable": false,
+      "attr": "alt",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "eventName",
+      "type": "string",
+      "mutable": false,
+      "attr": "event-name",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "'change'",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "mutable": false,
+      "attr": "label",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "mutable": false,
+      "attr": "placeholder",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "'click here to select source'",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "src",
+      "type": "any",
+      "mutable": false,
+      "attr": "src",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "any"
+        }
+      ],
+      "optional": true,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "events": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "listeners": []
+}

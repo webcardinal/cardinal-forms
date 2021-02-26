@@ -1,0 +1,86 @@
+{
+  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-label",
+  "filePath": "./src/components/psk-label/psk-label.tsx",
+  "fileName": "psk-label.tsx",
+  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-label/readme.md",
+  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-label/usage",
+  "tag": "psk-label",
+  "usage": {},
+  "docs": "",
+  "docsTags": [],
+  "encapsulation": "none",
+  "dependents": [
+    "psk-checkbox",
+    "psk-img-input",
+    "psk-input",
+    "psk-radio",
+    "psk-radio-group",
+    "psk-select",
+    "psk-textarea"
+  ],
+  "dependencies": [],
+  "dependencyGraph": {
+    "psk-checkbox": [
+      "psk-label"
+    ],
+    "psk-img-input": [
+      "psk-label"
+    ],
+    "psk-input": [
+      "psk-label"
+    ],
+    "psk-radio": [
+      "psk-label"
+    ],
+    "psk-radio-group": [
+      "psk-label"
+    ],
+    "psk-select": [
+      "psk-label"
+    ],
+    "psk-textarea": [
+      "psk-label"
+    ]
+  },
+  "props": [
+    {
+      "name": "for",
+      "type": "string",
+      "mutable": false,
+      "attr": "for",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "mutable": false,
+      "attr": "label",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "events": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "listeners": []
+}

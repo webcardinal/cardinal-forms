@@ -1,0 +1,146 @@
+{
+  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-radio",
+  "filePath": "./src/components/psk-radio/psk-radio.tsx",
+  "fileName": "psk-radio.tsx",
+  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-radio/readme.md",
+  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-forms/src/components/psk-radio/usage",
+  "tag": "psk-radio",
+  "usage": {},
+  "docs": "",
+  "docsTags": [],
+  "encapsulation": "none",
+  "dependents": [
+    "psk-radio-group"
+  ],
+  "dependencies": [
+    "psk-label"
+  ],
+  "dependencyGraph": {
+    "psk-radio": [
+      "psk-label"
+    ],
+    "psk-radio-group": [
+      "psk-radio"
+    ]
+  },
+  "props": [
+    {
+      "name": "checked",
+      "type": "boolean",
+      "mutable": true,
+      "attr": "checked",
+      "reflectToAttr": true,
+      "docs": "",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "invalidValue",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "invalid-value",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "mutable": false,
+      "attr": "label",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "mutable": false,
+      "attr": "name",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "readOnly",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "read-only",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "mutable": false,
+      "attr": "value",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "null",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": true,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "events": [
+    {
+      "event": "onChangeRadio",
+      "detail": "any",
+      "bubbles": true,
+      "cancelable": true,
+      "composed": false,
+      "docs": "",
+      "docsTags": []
+    }
+  ],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "listeners": []
+}

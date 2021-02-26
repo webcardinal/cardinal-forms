@@ -1,0 +1,62 @@
+{
+  "psk-checkbox": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-checkbox.json"
+  },
+  "psk-date-input": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-date-input.json"
+  },
+  "psk-email-input": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-email-input.json"
+  },
+  "psk-form": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-form.json"
+  },
+  "psk-form-row": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-form-row.json"
+  },
+  "psk-img-input": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-img-input.json"
+  },
+  "psk-input": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-input.json"
+  },
+  "psk-label": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-label.json"
+  },
+  "psk-number-input": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-number-input.json"
+  },
+  "psk-password-input": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-password-input.json"
+  },
+  "psk-radio": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-radio.json"
+  },
+  "psk-radio-group": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-radio-group.json"
+  },
+  "psk-select": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-select.json"
+  },
+  "psk-text-input": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-text-input.json"
+  },
+  "psk-textarea": {
+    "source": "@cardinal/wiki",
+    "path": "components/psk-textarea.json"
+  }
+}
