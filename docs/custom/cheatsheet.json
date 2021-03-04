@@ -1,62 +1,47 @@
 {
   "psk-checkbox": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-checkbox.json"
+    "source": "@cardinal/wiki"
   },
   "psk-date-input": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-date-input.json"
+    "source": "@cardinal/wiki"
   },
   "psk-email-input": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-email-input.json"
+    "source": "@cardinal/wiki"
   },
   "psk-form": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-form.json"
+    "source": "@cardinal/wiki"
   },
   "psk-form-row": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-form-row.json"
+    "source": "@cardinal/wiki"
   },
   "psk-img-input": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-img-input.json"
+    "source": "@cardinal/wiki"
   },
   "psk-input": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-input.json"
+    "source": "@cardinal/wiki"
   },
   "psk-label": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-label.json"
+    "source": "@cardinal/wiki"
   },
   "psk-number-input": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-number-input.json"
+    "source": "@cardinal/wiki"
   },
   "psk-password-input": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-password-input.json"
+    "source": "@cardinal/wiki"
   },
   "psk-radio": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-radio.json"
+    "source": "@cardinal/wiki"
   },
   "psk-radio-group": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-radio-group.json"
+    "source": "@cardinal/wiki"
   },
   "psk-select": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-select.json"
+    "source": "@cardinal/wiki"
   },
   "psk-text-input": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-text-input.json"
+    "source": "@cardinal/wiki"
   },
   "psk-textarea": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-textarea.json"
+    "source": "@cardinal/wiki"
   }
 }
