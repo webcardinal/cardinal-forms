@@ -7,7 +7,7 @@ export interface WebCardinalConfig extends StencilConfig {
 }
 
 export const config: WebCardinalConfig = {
-  component: "@cardinal/wiki",
+  component: "@cardinal/forms",
   namespace: 'webcardinal',
   globalScript: './src/globals/index.ts',
   outputTargets: [

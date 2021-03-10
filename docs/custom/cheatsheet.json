@@ -1,47 +1,47 @@
 {
   "psk-checkbox": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-date-input": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-email-input": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-form": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-form-row": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-img-input": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-input": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-label": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-number-input": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-password-input": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-radio": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-radio-group": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-select": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-text-input": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   },
   "psk-textarea": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/forms"
   }
 }
