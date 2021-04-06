@@ -1,10 +1,11 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 import { BindModel, CustomTheme, TableOfContentProperty } from '@cardinal/internals';
 
 @Component({
     tag: 'psk-label'
 })
 export class PskLabel {
+    @Element() htmlElement: HTMLElement;
 
     @CustomTheme()
     @BindModel() modelHandler;
@@ -28,6 +29,8 @@ export class PskLabel {
     @Prop() for: string | null = null;
 
     render() {
+        if(!this.htmlElement.isConnected) return null;
+        
         return (
             <label class="col-form-label" htmlFor={this.for}>
                 {this.label && this.label }

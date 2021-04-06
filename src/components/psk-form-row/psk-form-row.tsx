@@ -33,6 +33,8 @@ export class PskFormRow {
     }
 
     render() {
+        if(!this.__host.isConnected) return null;
+
         return <psk-grid innerHTML={this.componentSlot}
             columns={this.columns}
             layout={this.layout}>

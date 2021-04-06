@@ -1,16 +1,19 @@
-import { Component, Event, EventEmitter, h, Prop } from '@stencil/core';
+import { Component, Event, EventEmitter, h, Prop, Element } from '@stencil/core';
 import { BindModel, CustomTheme, TableOfContentEvent, TableOfContentProperty } from '@cardinal/internals';
 
 @Component({
     tag: 'psk-radio'
 })
 export class PskRadio {
+    @Element() htmlElement: HTMLElement;
 
     @CustomTheme()
 
     @BindModel() modelHandler
 
     render() {
+        if(!this.htmlElement.isConnected) return null;
+        
         const inputName = this.name ? this.name
             : (this.label && this.label.replace(/\s/g, '').toLowerCase());
 

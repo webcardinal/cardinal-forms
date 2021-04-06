@@ -1,10 +1,11 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 import { BindModel, CustomTheme, TableOfContentProperty } from '@cardinal/internals';
 
 @Component({
     tag: 'psk-email-input'
 })
 export class PskEmailInput {
+    @Element() htmlElement: HTMLElement;
 
     @CustomTheme()
 
@@ -66,6 +67,8 @@ export class PskEmailInput {
     @Prop() invalidValue?: boolean | null = null;
 
     render() {
+        if(!this.htmlElement.isConnected) return null;
+        
         return <psk-input
             type="email"
             label={this.label}

@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 import { BindModel, CustomTheme, TableOfContentProperty } from '@cardinal/internals';
 
 const YEAR_LEADING_ZEROS = {
@@ -13,11 +13,15 @@ const YEAR_LEADING_ZEROS = {
     styleUrl:"./psk-date-input.css"
 })
 export class PskDateInput {
+    @Element() htmlElement: HTMLElement;
+
     @CustomTheme()
 
     @BindModel() modelHandler;
 
     render() {
+        if(!this.htmlElement.isConnected) return null;
+        
         const {
             dateToDisplay,
             dateToAssign

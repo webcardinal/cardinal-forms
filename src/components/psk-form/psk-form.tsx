@@ -67,6 +67,7 @@ export class PskForm {
   }
 
   render() {
+    if(!this._host.isConnected) return null;
 
     return (
       <div class="container">

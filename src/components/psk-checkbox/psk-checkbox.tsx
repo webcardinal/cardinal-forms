@@ -1,16 +1,19 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 import { BindModel, CustomTheme, TableOfContentProperty, stringToBoolean } from '@cardinal/internals';
 
 @Component({
     tag: 'psk-checkbox'
 })
 export class PskCheckbox {
+    @Element() htmlElement: HTMLElement;
 
     @CustomTheme()
 
     @BindModel() modelHandler;
 
     render() {
+        if(!this.htmlElement.isConnected) return null;
+        
         const checkboxName = this.name ? this.name
             : this.checkboxLabel ? this.checkboxLabel.replace(/\s/g, '').toLowerCase() : '';
 

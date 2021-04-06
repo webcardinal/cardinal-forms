@@ -1,16 +1,19 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 import { BindModel, CustomTheme, TableOfContentProperty } from '@cardinal/internals';
 
 @Component({
     tag: 'psk-number-input'
 })
 export class PskNumberInput {
+    @Element() htmlElement: HTMLElement;
 
     @CustomTheme()
 
     @BindModel() modelHandler;
 
     render() {
+        if(!this.htmlElement.isConnected) return null;
+        
         return <psk-input
             type="number"
             label={this.label}

@@ -37,6 +37,8 @@ export class PskRadioGroup {
     }
 
     render() {
+        if(!this._host.isConnected) return null;
+
         return (
             <div class="form-group">
                 <psk-label for={this.name} label={this.label} />

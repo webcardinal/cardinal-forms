@@ -156,6 +156,8 @@ export class PskSelect {
   }
 
   render() {
+    if(!this._host.isConnected) return null;
+
     const name: string = this.label && normalizeRegexToString(this.label, INVALID_ID_CHARACTERS_REGEX, '').toLowerCase();
     const placeholderSelected: boolean = this.options.findIndex((opt: Option) => opt.value === this.value) === -1;
 

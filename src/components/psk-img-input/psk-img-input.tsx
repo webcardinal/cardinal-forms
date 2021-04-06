@@ -17,6 +17,8 @@ export class PskImgInput {
   }
 
   render() {
+    if(!this.element.isConnected) return null;
+
     return <Host  class={`form-group`}>
       {this.label && <psk-label label={this.label} />}
 
