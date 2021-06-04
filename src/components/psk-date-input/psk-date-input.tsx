@@ -21,14 +21,17 @@ export class PskDateInput {
 
     render() {
         if(!this.htmlElement.isConnected) return null;
-        
-        const {
+
+        let {
             dateToDisplay,
             dateToAssign
         } = this.__getFormattedDate();
 
+        if (this.type === "month" && dateToAssign) {
+            dateToAssign = dateToAssign.substring(0, dateToAssign.lastIndexOf("-"));
+        }
         return <psk-input
-            type="date"
+            type={this.type === "month" ? "month" : "date"}
             label={this.label}
             name={this.name}
             value={dateToAssign}
@@ -116,7 +119,7 @@ export class PskDateInput {
 
         const formattedDate: string = this.dataFormat
             ? this.dataFormat.trim()
-                .split(' ')
+                .split(/[ ,\/]+/ )
                 .map((type: string) => dateVariables[type])
                 .join('/')
             : dateValue;
@@ -174,6 +177,8 @@ export class PskDateInput {
         defaultValue: "false"
     })
     @Prop() readOnly?: boolean = false;
+
+    @Prop() type?:string="date";
 
     @TableOfContentProperty({
         description: [`This property indicates if the value entered by the user is a valid one according to some validation present in the controller.`],

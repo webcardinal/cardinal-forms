@@ -1,3 +1,14 @@
+input[type=date].formated-date {
+    position: relative;
+    width: 150px; height: 22px;
+    color: white;
+}
+input[type=month].formated-date {
+    position: relative;
+    width: 150px; height: 22px;
+    color: black;
+}
+
 .formated-date {
   position: relative;
   color:transparent!important;
@@ -5,8 +16,8 @@
 
 .formated-date:before {
   position: absolute;
-  top: 0.45rem;
-  left: 0.7rem;
+  top: 3px;
+  left: 3px;
   content: attr(data-date);
   display: inline-block;
   color:#333333;
@@ -17,8 +28,10 @@
 }
 
 .formated-date::-webkit-calendar-picker-indicator {
-  position: absolute;
-  top: 0.41rem;
-  right: 0.8rem;
-  opacity: 1;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    color: black;
+    opacity: 1;
 }
+
