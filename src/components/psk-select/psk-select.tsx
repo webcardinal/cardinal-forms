@@ -117,7 +117,10 @@ export class PskSelect {
     evt.preventDefault();
     evt.stopImmediatePropagation();
 
-    const value = evt.target.value;
+    let selectedOptions = Array.from(evt.target.selectedOptions);
+    let selectedValues = selectedOptions.map(selectedOption=>{return selectedOption['value']});
+    const value = this.selectionType === "multiple"? selectedValues:selectedValues[0];
+
     if (this.modelHandler) this.modelHandler.updateModel('value', value);
 
     if (this.eventName) {
@@ -173,7 +176,7 @@ export class PskSelect {
     let selectOptionsList = [];
     if (this.options) {
       selectOptionsList = this.options.map((option: Option) => {
-        const optValue = option.value ? option.value
+        const optValue = typeof option.value !== "undefined" ? option.value
           : option.label && normalizeRegexToString(option.label, INVALID_ID_CHARACTERS_REGEX, '');
         const isSelected: boolean = option.selected === true || this.value === optValue;
         return (
