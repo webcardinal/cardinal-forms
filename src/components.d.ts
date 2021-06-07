@@ -26,6 +26,7 @@ export namespace Components {
         "placeholder"?: string | null;
         "readOnly"?: boolean;
         "required"?: string;
+        "type"?: string;
         "value"?: string | null;
     }
     interface PskEmailInput {
@@ -264,6 +265,7 @@ declare namespace LocalJSX {
         "placeholder"?: string | null;
         "readOnly"?: boolean;
         "required"?: string;
+        "type"?: string;
         "value"?: string | null;
     }
     interface PskEmailInput {
